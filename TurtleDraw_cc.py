@@ -1,6 +1,6 @@
 import turtle
 
-print('Turtle Draw Lite Starting...')
+print('Turtle Draw Starting...')
 
 edTheTurtle = turtle.Turtle()
 edTheTurtle.forward(100)
