@@ -5,3 +5,5 @@ Collin Cimaroli: collinpcimaroli@lewisu.edu
 Eric Pogue for the TurtleDrawLite tutorials
 
 W3Schools for example code and tutorials
+
+ChatGPT for how to calculate the distance
