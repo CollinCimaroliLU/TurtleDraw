@@ -2,6 +2,9 @@ TEXTFILENAME = 'turtle-draw.txt'
 
 import turtle
 
+def close_window():
+    turtle.bye()
+
 print('')
 print('Turtle Draw - cpc')
 print('')
@@ -13,7 +16,7 @@ cpc = turtle.Turtle()
 cpc.speed(10)
 cpc.penup()
 
-print('Reading a text file line by line.')
+print('Reading a text file.')
 print('')
 turtleDrawTextfile = open(TEXTFILENAME, 'r')
 line = turtleDrawTextfile.readline()
@@ -30,14 +33,14 @@ while line:
         cpc.goto(x,y)
         cpc.pendown()
         
-    if (len(parts)  == 1):
+    if (len(parts) == 1):
         cpc.penup()
     
     line = turtleDrawTextfile.readline()
     
-turtle.done()
-turtleDrawTextfile.close()
-
-
+turtle.onkey(close_window, "\n")
+turtle.listen()
+turtle.mainloop()
+print('')
 print('\nEnd')
-
+print('')
