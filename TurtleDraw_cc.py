@@ -8,7 +8,7 @@ print('')
 
 cpc = turtle.Turtle()
 cpc.speed(10)
-
+cpc.penup()
 
 print('Reading a text file line by line.')
 print('')
@@ -23,9 +23,12 @@ while line:
         x = int(parts[1])
         y = int(parts[2])
         
-        cpc.pendown()
+        cpc.color(color)
         cpc.goto(x,y)
-    
+        cpc.pendown()
+        
+    if (len(parts)  == 1):
+        cpc.penup()
     
     line = turtleDrawTextfile.readline()
     
