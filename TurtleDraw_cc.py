@@ -6,6 +6,9 @@ print('')
 print('Turtle Draw - cpc')
 print('')
 
+screen = turtle.Screen()
+screen.setup(width=450, height=450)
+
 cpc = turtle.Turtle()
 cpc.speed(10)
 cpc.penup()
@@ -33,5 +36,8 @@ while line:
     line = turtleDrawTextfile.readline()
     
 turtle.done()
+turtleDrawTextfile.close()
+
+
 print('\nEnd')
 
